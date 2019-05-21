@@ -1,13 +1,13 @@
 let field = "";
 let hidden = "";
 let total = "";
-let operator =;
+let operator = "";
 
 
 window.onload = init;
 function init() {
   /**
-   * need selectors for 
+   * need selectors for *
    * keyOperator are math functions 
    * keyEqual = math()
    * buttons
@@ -36,7 +36,7 @@ const calc = (event) => {
 
 const numInput = () => {
   event.preventDefault();
-  const regex = /^["0-9", "."]/g;
+  const regex = /^["0-9"]/g;
   const num = event.target.innerText;
   if (regex.test(num)) {
     field += num;
