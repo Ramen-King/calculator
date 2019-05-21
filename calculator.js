@@ -16,7 +16,7 @@ function init() {
   const buttons = document.querySelectorAll("button");
   
  buttons.forEach(value => value.addEventListener("click", ...func));
-  
+}
 
 const keyOps = (event) => {
   event.preventDefault();
@@ -54,7 +54,8 @@ const converter = value => {
 };
 // magic makes voodoo
 function funcOps(){
-let operator = "";
+  //- keyEqual event
+event.preventDefault()
   switch (operator){
     case "add":
       result = start + last
@@ -101,4 +102,4 @@ let operator = "";
       break;
 
     default:
-      }}}
+      }}
